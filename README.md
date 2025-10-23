@@ -46,3 +46,25 @@ bun run build
 ```
 
 This package is designed primarily as a Bun module and ships TypeScript sources for first-class Bun support.
+
+## Bun API Examples
+
+Run these examples to see integration with Bun runtime APIs:
+
+- Fetch with timeout (AbortSignal from token passed to fetch)
+
+```bash
+bun run ex:fetch
+```
+
+- Simple HTTP server with per-request timeouts and graceful shutdown
+
+```bash
+bun run ex:serve
+```
+
+- Concurrency with linked tokens (overall deadline cancels slower tasks)
+
+```bash
+bun run ex:concurrency
+```

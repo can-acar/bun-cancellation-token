@@ -10,7 +10,10 @@
   "scripts": {
     "dev": "bun run index.ts",
     "test": "bun test",
-    "build": "bun build ./index.ts --outdir ./dist --target bun"
+    "build": "bun build ./index.ts --outdir ./dist --target bun",
+    "ex:fetch": "bun run ./examples/fetch-with-timeout.ts",
+    "ex:serve": "bun run ./examples/serve-with-timeouts.ts",
+    "ex:concurrency": "bun run ./examples/concurrency.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
