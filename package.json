@@ -1,0 +1,21 @@
+{
+  "name": "bun-cancellation-token",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./index.ts"
+  },
+  "module": "./index.ts",
+  "scripts": {
+    "dev": "bun run index.ts",
+    "test": "bun test",
+    "build": "bun build ./index.ts --outdir ./dist --target bun"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
